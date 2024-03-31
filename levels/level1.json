@@ -1,0 +1,97 @@
+[
+  {"position":[60, 15],
+  "lives": 1}
+  ,
+  {"position":[180, 15],
+  "lives": 1}
+  ,
+  {"position":[300, 15],
+  "lives": 1}
+  ,
+  {"position":[420, 15],
+  "lives": 1}
+  ,
+  {"position":[540, 15],
+  "lives": 1}
+  ,
+  {"position":[660, 15],
+  "lives": 1}
+  ,
+  {"position":[780, 15],
+  "lives": 1}
+  ,
+  {"position":[900, 15],
+  "lives": 1}
+  ,
+  {"position":[60, 45],
+  "lives": 1}
+  ,
+  {"position":[180, 45],
+  "lives": 1}
+  ,
+  {"position":[300, 45],
+  "lives": 1}
+  ,
+  {"position":[420, 45],
+  "lives": 1}
+  ,
+  {"position":[540, 45],
+  "lives": 1}
+  ,
+  {"position":[660, 45],
+  "lives": 1}
+  ,
+  {"position":[780, 45],
+  "lives": 1}
+  ,
+  {"position":[900, 45],
+  "lives": 1}
+  ,
+  {"position":[60, 75],
+  "lives": 1}
+  ,
+  {"position":[180, 75],
+  "lives": 1}
+  ,
+  {"position":[300, 75],
+  "lives": 1}
+  ,
+  {"position":[420, 75],
+  "lives": 1}
+  ,
+  {"position":[540, 75],
+  "lives": 1}
+  ,
+  {"position":[660, 75],
+  "lives": 1}
+  ,
+  {"position":[780, 75],
+  "lives": 1}
+  ,
+  {"position":[900, 75],
+  "lives": 1}
+  ,
+  {"position":[60, 105],
+  "lives": 1}
+  ,
+  {"position":[180, 105],
+  "lives": 1}
+  ,
+  {"position":[300, 105],
+  "lives": 1}
+  ,
+  {"position":[420, 105],
+  "lives": 1}
+  ,
+  {"position":[540, 105],
+  "lives": 1}
+  ,
+  {"position":[660, 105],
+  "lives": 1}
+  ,
+  {"position":[780, 105],
+  "lives": 1}
+  ,
+  {"position":[900, 105],
+  "lives": 1}
+]
