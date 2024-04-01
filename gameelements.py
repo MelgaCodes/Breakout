@@ -4,13 +4,16 @@ import math
 
 
 class Ball:
-    def __init__(self, screen):
+    def __init__(self, screen, first_ball):
         self.color = (255, 255, 0)
         self.radius = 7.5
-        self.heading = randint(225, 315)
+        if first_ball:
+            self.heading = randint(240, 300)
+        else:
+            self.heading = randint(60, 120)
         self.limits = (screen.get_width(), screen.get_height())
         self.position = pygame.Vector2(screen.get_width() / 2, (screen.get_height() / 2) + 90)
-        self.speed = 300
+        self.speed = 400
 
     def move(self, dt):
         self.position.x += self.speed * math.cos(math.radians(self.heading)) * dt
@@ -114,3 +117,32 @@ class Block:
             self.g = 255
             self.b = 255
         self.color = (self.r, self.g, self.b)
+
+    @staticmethod
+    def yield_surprise_pack():
+        return randint(1, 3) == 2
+
+
+class SurprisePack:
+    def __init__(self, position):
+        self.position = position
+        self.speed = 300
+        self.color = 'cyan'
+
+    def move(self, dt):
+        self.position[1] += self.speed * dt
+
+    def surprise_pack_collected(self, paddle_position, paddle_width):
+        if 700 < self.position[1] < 710 and paddle_position[0] - paddle_width/2 < self.position[0] < paddle_position[0] + paddle_width/2:
+            return "caught"
+        if 720 < self.position[1]:
+            return "missed"
+
+    @staticmethod
+    def random_effect():
+        effects = {1: "extra ball",
+                   2: "longer paddle",
+                   3: "shorter paddle",
+                   4: "faster ball",
+                   5: "faster paddle"}
+        return effects[randint(1, 5)]

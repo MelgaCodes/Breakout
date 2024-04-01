@@ -22,7 +22,6 @@ test_mode = False
 while running:
     level_list = os.listdir("levels")
     # poll for events
-    # pygame.QUIT event means the user clicked X to close your window
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE and position + 1 in available_levels:
@@ -48,10 +47,11 @@ while running:
             elif event.key == pygame.K_t and test_mode:
                 available_levels = saved_levels
                 test_mode = False
+        # pygame.QUIT event means the user clicked X to close your window
         if event.type == pygame.QUIT:
             running = False
 
-    # RENDER YOUR GAME HERE
+    # Rendering graphics
     menu_screen.fill("black")
     arrow.render_graphics()
     y_first_button = menu_screen.get_height() / 2 - 30 + position * 75
